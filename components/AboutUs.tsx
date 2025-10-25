@@ -6,17 +6,17 @@ const AboutUs: React.FC = () => {
   const { t } = useContext(LanguageContext);
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-start">
-            <h2 className="text-4xl font-bold text-yellow-400 mb-6">
+            <h2 className="text-4xl font-bold text-yellow-500 dark:text-yellow-400 mb-6">
               {t('about.title')}
             </h2>
-            <p className="text-lg text-gray-300 mb-4 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
               {t('about.paragraph1')}
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               {t('about.paragraph2')}
             </p>
           </div>

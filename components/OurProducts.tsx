@@ -28,13 +28,13 @@ const OurProducts: React.FC = () => {
   const { t } = useContext(LanguageContext);
 
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-white dark:bg-black transition-colors duration-300">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-yellow-400">
+          <h2 className="text-4xl font-bold text-yellow-500 dark:text-yellow-400">
             {t('products.title')}
           </h2>
-          <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
             {t('products.subtitle')}
           </p>
         </div>
